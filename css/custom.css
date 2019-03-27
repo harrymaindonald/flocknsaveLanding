@@ -45,15 +45,19 @@
 }
 
 #landing3{
-    padding: 50 10%;
-    padding-bottom: 100px;
+    padding: 50px 10% 150px 10%;
+    padding-top: 50px;
     background-color: #f8f8f8 !important; 
     text-align: center;
+    color:#4f504f;
 }
 
-#landing3 .register-area p {
+
+
+#landing3 #registerTitle {
     font-size: 50px;
-    color: #17954c;
+    margin-top: 100px;
+    color: #4f504f;
     text-shadow: 1px 2px 5px rgba(0,0,0,0.3);
 }
 
@@ -61,12 +65,47 @@
     margin-top: 50px;
 }
 
-.join-as-buyer{
-    margin-right: 10px;
+
+
+.register-content{
+    display:flex;
+
+    justify-content: center;
 }
 
-.join-as-supplier{
-    margin-left: 10px;
+.buyer-area, .supplier-area{
+    width: 50%;
+    padding: 20px;
+}
+
+.buyer-area ul, .supplier-area ul{
+    list-style: none;
+    padding:0;
+}
+
+.type-title {
+    font-size: 26px;
+}
+
+.title-buyer{
+    color: #17954c;
+}
+
+.title-supplier{
+    color:#147398;
+}
+
+.register-content{
+    margin-top: 30px;
+}
+
+.info-text{
+    height: 72px;
+}
+
+#landing3 hr{
+    margin: 0;
+    width: 100% !important;
 }
 
 .home-btn{
@@ -612,7 +651,7 @@ main #search #seachResults ul li .template-withtabs-content-flexitem3 table a{
 #firstMessage {
     text-align: center;
     color: #17954c;
-    padding: 70px 10%;
+    padding: 70px 10% 20px 10%;
    
 }
 
@@ -834,6 +873,10 @@ main #search #seachResults ul li .template-withtabs-content-flexitem3 table a{
 
 .fas {
     color: #1c1c1c !important;
+}
+
+.buyer-area ul li .fas, .supplier-area ul li .fas{
+    color: #4f504f !important;
 }
 
 .buyers-hovered ul, .supplier-hovered ul {
@@ -2743,7 +2786,13 @@ input.bad_bid{
         cursor: pointer;
         
         text-align: center;
+        
     }
+
+    .info-text{
+        height: 100px;
+    }
+
  }
 
  @media only screen and (max-width: 980px){
@@ -2753,6 +2802,10 @@ input.bad_bid{
 
      #recycleLogo{
         visibility: hidden;
+     }
+
+     .info-text{
+         height: 131px;
      }
  }
 
@@ -2782,6 +2835,19 @@ input.bad_bid{
 
      .move-down-btn {
          margin-bottom: 10px;
+     }
+
+     .register-content{
+         flex-direction: column;
+         align-items: center;
+     }
+
+     .buyer-area, .supplier-area{
+         width: 100%;
+     }
+
+     .info-text{
+         height: auto;
      }
  }
  
@@ -2954,7 +3020,7 @@ input.bad_bid{
          background:none;
      }
 
-     #landing3 .register-area p {
+     #registerTitle {
          font-size: 30px;
      }
 
@@ -2962,7 +3028,7 @@ input.bad_bid{
          margin-top: 25px;
      }
 
-     .register-buttons button{
+     .join-as-buyer, .join-as-supplier{
          width: 220px;
          margin: 0;
      }
@@ -3095,7 +3161,7 @@ input.bad_bid{
         background:none;
     }
 
-    #landing3 .register-area p {
+    #landing3 #registerTitle {
         font-size: 30px;
     }
 
@@ -3103,7 +3169,7 @@ input.bad_bid{
         margin-top: 25px;
     }
 
-    .register-buttons button{
+    .join-as-buyer, .join-as-supplier{
         width: 250px;
         margin: 0;
     }
@@ -3116,13 +3182,6 @@ input.bad_bid{
         padding: 30px 30px;
     }
 
-    .join-as-buyer{
-        margin-right: 5px !important;
-
-    }
-
-    .join-as-supplier{
-        margin-left: 5px !important;
-    }
+ 
 
  }
