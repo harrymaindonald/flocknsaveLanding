@@ -112,6 +112,10 @@
     width: 175px;
 }
 
+#registerNote {
+    color: #b3b3b3
+}
+
 .home-btn{
     border: none !important;
 	font-family: inherit !important;
@@ -3025,7 +3029,7 @@ input.bad_bid{
      }
 
      #registerTitle {
-         font-size: 30px;
+         font-size: 30px !important;
      }
 
      .register-buttons {
@@ -3166,7 +3170,7 @@ input.bad_bid{
     }
 
     #landing3 #registerTitle {
-        font-size: 30px;
+        font-size: 30px !important;
     }
 
     .register-buttons {
