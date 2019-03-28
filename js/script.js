@@ -472,6 +472,7 @@ $(function(){
     });
 
 
+
     /// - -  END
 
 
@@ -1374,7 +1375,5 @@ moveDown.addEventListener('click', function(){
     scrollDown('#landing3', 1000);
 });
 
-
-  
 
 

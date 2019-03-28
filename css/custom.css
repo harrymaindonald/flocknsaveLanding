@@ -108,6 +108,10 @@
     width: 100% !important;
 }
 
+.join-as-buyer, .join-as-supplier{
+    width: 175px;
+}
+
 .home-btn{
     border: none !important;
 	font-family: inherit !important;
