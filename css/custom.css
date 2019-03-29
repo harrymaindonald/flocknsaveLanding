@@ -110,6 +110,7 @@
 
 .join-as-buyer, .join-as-supplier{
     width: 175px;
+    margin-top:30px;
 }
 
 #registerNote {
