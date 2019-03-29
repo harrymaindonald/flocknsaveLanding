@@ -3052,6 +3052,7 @@ input.bad_bid{
      .join-as-buyer, .join-as-supplier{
          width: 220px;
          margin: 0;
+         margin-top: 15px;
      }
 
      .join-as-buyer{
@@ -3193,6 +3194,7 @@ input.bad_bid{
     .join-as-buyer, .join-as-supplier{
         width: 250px;
         margin: 0;
+  
     }
 
     .join-as-buyer{
