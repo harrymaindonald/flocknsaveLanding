@@ -158,7 +158,7 @@
     height:auto !important;
 }
 .join-as-buyer, .join-as-supplier{
-    height: 42px !important;
+    height: 48px !important;
     line-height: normal !important;
 }
 .home-btn:after {
@@ -3111,7 +3111,8 @@ input.bad_bid{
      }
 
      .join-as-buyer, .join-as-supplier{
-      
+        height: 42px !important;
+        line-height: normal !important;
          margin: 0;
          margin-top: 15px;
      }
