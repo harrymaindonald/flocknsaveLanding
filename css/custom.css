@@ -1,8 +1,5 @@
 #landing1{
-    background-image: url('../imgs/fistpump9.png');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size:cover;
+    background-color: white;
     height: 100vh;
     display:flex;
     align-items: center;
@@ -96,6 +93,7 @@
 
 #buyerUl, #supplierUl{
     visibility: hidden;
+    
 }
 
 #buyersCats, #suppliersCats{

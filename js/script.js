@@ -1408,6 +1408,3 @@ revealSupplierInfo.addEventListener('click', function(){
         supplierInfo2.style.visibility = "hidden";
     }
 });
-
-
-
