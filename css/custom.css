@@ -95,7 +95,7 @@
 }
 
 .supplier-area .info-text {
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 }
 
 .user-register{
@@ -134,9 +134,7 @@
     width: 100% !important;
 }
 
-.join-as-buyer, .join-as-supplier{
 
-}
 
 #registerNote {
     color: #b3b3b3
@@ -159,7 +157,10 @@
     border-radius: 60px;
     height:auto !important;
 }
-
+.join-as-buyer, .join-as-supplier{
+    height: 42px !important;
+    line-height: normal !important;
+}
 .home-btn:after {
 	content: '';
 	position: absolute;
@@ -2881,9 +2882,7 @@ input.bad_bid{
         margin: 0px;
     }
 
-    .supplier-area .info-text{
-        margin-bottom: 0;
-    }
+    
 
     .user-register{
         margin-top: 20px;
@@ -2901,9 +2900,8 @@ input.bad_bid{
         visibility: hidden;
      }
 
-     .info-text{
-         height: 131px;
-     }
+     
+   
  }
 
  @media only screen and (max-width: 813px){
@@ -2926,6 +2924,16 @@ input.bad_bid{
          height: auto;
      }
 
+     #landing1 #leftContent h1 {
+        font-size: 3em;
+        margin-bottom: 15px;
+        margin-top: 20px;
+    }
+
+    #landing1 #leftContent h2 {
+        font-size: 1.4rem;
+        margin: 0px;
+    }
   
  }
  
@@ -3103,7 +3111,7 @@ input.bad_bid{
      }
 
      .join-as-buyer, .join-as-supplier{
-         width: 220px;
+      
          margin: 0;
          margin-top: 15px;
      }
