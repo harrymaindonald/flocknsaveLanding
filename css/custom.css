@@ -2809,6 +2809,23 @@ input.bad_bid{
         padding-left: 10% !important;
     }
 
+  
+
+
+    @media only screen and (min-width: 1285px) and (max-height: 780px) {
+        .buyer-area, .supplier-area{
+            height: 45vh;
+            margin-bottom: 0;
+        }
+        .category-container{
+            height:40vh;
+        }
+    
+        .user-register{
+            height: 15vh;
+            margin-top:0;
+        }
+    }
  
  }
  
