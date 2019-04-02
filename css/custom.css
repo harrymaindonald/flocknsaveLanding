@@ -8,31 +8,29 @@
     align-items: center;
 }
 
-#leftContent, #rightContent{
-    width: 50%;
-    margin: 0 10%;
+#leftContent{
+    width: 100%;
+    text-align: center;
     padding: 20px;
     color: #3c3c3c;
 }
 
-#leftContent{
-    margin-right: 5%;
-}
 
-#rightContent{
-    background: rgba(255, 255, 255, 0.3);
-    border-radius: 5px;
-    margin-left: 5%;
-}
+
 
 #landing1 #leftContent h1 {
     color: #33687A;
     font-size: 4em;
+    margin-bottom: 1em;
     text-shadow: 0px 4px 3px rgba(255, 255, 255, 0.4), 0px 8px 13px rgba(255, 255, 255, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
 }
 
 #landing1 #leftContent h2{
     font-size: 1.9rem;
+}
+
+.interest-buttons{
+    margin: 100px 0px 100px 0px;    
 }
 
 .landing-logo{
@@ -42,6 +40,25 @@
     margin: 20px;
     padding: 10px;
     background: rgba(255,255,255,0.3);
+}
+
+#buyerInterest {
+    height: 100vh;
+    background:white;
+    padding: 0px 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#supplierInterest {
+    height: 100vh;
+    background: white;
+    padding: 0px 10%;
+    border-top: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #landing3{
@@ -69,14 +86,26 @@
 
 .register-content{
     display:flex;
-
     justify-content: center;
 }
 
 .buyer-area, .supplier-area{
-    width: 50%;
-    padding: 20px;
+    text-align: center;
+    margin: 0px 150px 50px 150px;
 }
+
+.supplier-area .info-text {
+    margin-bottom: 40px;
+}
+
+.user-register{
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+
 
 .buyer-area ul, .supplier-area ul{
     list-style: none;
@@ -99,9 +128,6 @@
     margin-top: 30px;
 }
 
-.info-text{
-    height: 72px;
-}
 
 #landing3 hr{
     margin: 0;
@@ -109,19 +135,11 @@
 }
 
 .join-as-buyer, .join-as-supplier{
-    width: 175px;
-    margin-top:30px;
+
 }
 
 #registerNote {
     color: #b3b3b3
-}
-
-#processChart {
-    margin: 100px auto 0px auto;
-    padding-bottom: 100px;
-    width: 80%;
-    text-align: center;
 }
 
 .home-btn{
@@ -156,12 +174,14 @@
 }
 
 
+
+
 .move-down-btn{
     border: 4px solid #33687A !important;
     color: #fff !important;
     background: #33687A !important;
-    margin-top: 50px;
-    margin-bottom: 100px;
+    width: 220px;
+    margin: 0 25px;
 }
 
 .move-down-btn:hover{
@@ -671,11 +691,24 @@ main #search #seachResults ul li .template-withtabs-content-flexitem3 table a{
    
 }
 
+.category-container{
+    text-align: center;
+    color: #17954c;
+    font-size: 24px;
+    width: 100%;
+}
+
 #firstMessage p {
     margin: 0;
     text-shadow: 1px 2px 5px rgba(0,0,0,0.3);
 
 }
+
+.category-container p{
+    margin: 0;
+
+}
+
 
 #firstMessage p:nth-child(1){
     font-size: 40px;
@@ -720,6 +753,24 @@ main #search #seachResults ul li .template-withtabs-content-flexitem3 table a{
     align-content: center;
     align-items: center;
     margin: 50px 0px;
+}
+
+.category-container .categories {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+.category-container .categories .category img{
+    height: 90px;
+}
+
+.category-container .categories .category p{
+    font-size: 12px !important;
 }
 
 .categories .category {
@@ -2802,17 +2853,25 @@ input.bad_bid{
         cursor: pointer;
         
         text-align: center;
-        
     }
 
-    .info-text{
-        height: 100px;
+    .category-container .categories .category {
+        padding: 5px;
     }
 
-    #processChart{
-        margin:0;
-        width: 100%;
+  
+    .buyer-area, .supplier-area {
+        margin: 0px;
     }
+
+    .supplier-area .info-text{
+        margin-bottom: 0;
+    }
+
+    .user-register{
+        margin-top: 20px;
+    }
+
 
  }
 
@@ -2831,24 +2890,7 @@ input.bad_bid{
  }
 
  @media only screen and (max-width: 813px){
-     #landing1 {
-         flex-direction: column;
-         height: auto;
-     }
-
-
-     #leftContent, #rightContent{
-         width: auto;
-         margin-left: 50px;
-         margin-right: 50px;
-         margin-bottom: 50px;
-     }
-
-     #leftContent{
-         text-align: center;
-         margin-top: 30px;
-     }
-
+    
      .landing-logo{
          left: 0;
          position: absolute;
@@ -2863,13 +2905,11 @@ input.bad_bid{
          align-items: center;
      }
 
-     .buyer-area, .supplier-area{
-         width: 100%;
-     }
-
      .info-text{
          height: auto;
      }
+
+  
  }
  
  @media only screen and (max-width: 500px) {
@@ -3010,14 +3050,11 @@ input.bad_bid{
          font-size: 12px !important;
      }
 
-     #landing1{
-         height: auto;
-     }
 
      #landing1 #leftContent h1 {
          font-size: 3em;
          margin-bottom: 15px;
-         margin-top: 20px;
+         margin-top: 100px;
      }
 
      #landing1 #leftContent h2 {
@@ -3025,9 +3062,8 @@ input.bad_bid{
          margin: 0px;
      }
 
-     #rightContent{
-        margin: 0 30px 30px 30px;
-        font-size: 13px;
+     .interest-buttons{
+         margin: 75px 0px 100px 0px;
      }
 
      .move-down-btn{
@@ -3058,6 +3094,20 @@ input.bad_bid{
      .join-as-buyer{
          margin-bottom: 10px !important;
      }
+
+
+    .category-container{
+        display:none;
+    }
+
+    .buyer-area, .supplier-area{
+        margin: 0;
+        font-size: 14px;
+    }
+
+    .supplier-area .info-text{
+        margin-bottom:20px;
+    }
 
 
  }
@@ -3152,9 +3202,7 @@ input.bad_bid{
         height: auto;
      }
 
-     #landing1{
-        height: auto;
-    }
+
 
     #landing1 #leftContent h1 {
         font-size: 3em;
@@ -3165,11 +3213,6 @@ input.bad_bid{
     #landing1 #leftContent h2 {
         font-size: 1.4rem;
         margin: 0px;
-    }
-
-    #rightContent{
-       margin: 0 30px 30px 30px;
-       font-size: 13px;
     }
 
     .move-down-btn{
@@ -3192,9 +3235,9 @@ input.bad_bid{
     }
 
     .join-as-buyer, .join-as-supplier{
-        width: 250px;
         margin: 0;
-  
+        height: 42px !important;
+        line-height: normal !important;
     }
 
     .join-as-buyer{
@@ -3204,7 +3247,46 @@ input.bad_bid{
     #firstMessage {
         padding: 30px 30px;
     }
-
  
+    
+    .category-container{
+        display:none;
+    }
+
+    .interest-buttons{
+        margin: 30px 0px 30px 0px;
+    }
+
+    .move-down-btn{
+        width: 205px;
+        font-size: 13px !important;
+    }
+
+    .buyer-area, .supplier-area{
+        margin: 0;
+        font-size: 13px;
+    }
+
+    .type-title{
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    .supplier-area .type-title{
+        margin-top:0;
+    }
+
+    .home-btn{
+        font-size: 12px !important;
+    }
+
+    .user-register{
+        margin: 0;
+    }
+
+    .supplier-area .info-text{
+        margin-bottom:20px;
+    }
 
  }

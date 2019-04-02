@@ -1368,11 +1368,16 @@ $("#calculate_button").click(function(e){
   }
 
  
-var moveDown = document.querySelector('.move-down-btn');
+var moveDownBuyer = document.querySelector('.move-down-btn');
+var moveDownSupplier = document.querySelector('.move-down-btn2');
 
 
-moveDown.addEventListener('click', function(){
-    scrollDown('#landing3', 1000);
+moveDownBuyer.addEventListener('click', function(){
+    scrollDown('#buyerInterest', 1000);
+});
+
+moveDownSupplier.addEventListener('click', function(){
+    scrollDown('#supplierInterest', 1000);
 });
 
 
