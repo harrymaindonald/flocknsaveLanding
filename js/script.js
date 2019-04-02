@@ -1334,11 +1334,10 @@ $("#calculate_button").click(function(e){
         $("#supplierInfo").fadeTo("400", "0");
         $("#supplierRevealIcon").css("cssText", "color: white !important;");
     });
-
-
-   
-
   });
+
+
+  //Landing reveal info
 
 
 
@@ -1378,6 +1377,36 @@ moveDownBuyer.addEventListener('click', function(){
 
 moveDownSupplier.addEventListener('click', function(){
     scrollDown('#supplierInterest', 1000);
+});
+
+var revealBuyerInfo = document.getElementById('landingBuyerReveal');
+var revealSupplierInfo = document.getElementById('landingSupplierReveal');
+var buyerInfo1 = document.getElementById('buyerUl'); 
+var buyerInfo2 = document.getElementById('buyersCats');
+var supplierInfo1 = document.getElementById('supplierUl');
+var supplierInfo2 = document.getElementById('suppliersCats');
+
+
+revealBuyerInfo.addEventListener('click', function(){
+    if(buyerInfo1.style.visibility === "hidden"){
+        buyerInfo1.style.visibility = "visible";
+        buyerInfo2.style.visibility = "visible";
+        
+    } else {
+        buyerInfo1.style.visibility = "hidden";
+        buyerInfo2.style.visibility = "hidden";
+    }
+});
+
+
+revealSupplierInfo.addEventListener('click', function(){
+    if(supplierInfo1.style.visibility === "hidden"){
+        supplierInfo1.style.visibility = "visible";
+        supplierInfo2.style.visibility = "visible";
+    } else {
+        supplierInfo1.style.visibility = "hidden";
+        supplierInfo2.style.visibility = "hidden";
+    }
 });
 
 
