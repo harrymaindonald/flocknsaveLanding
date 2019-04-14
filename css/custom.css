@@ -40,7 +40,8 @@
 }
 
 #buyerInterest {
-    height: 100vh;
+    height: 100%;
+    min-height: 100vh;
     background:white;
     padding: 0px 10%;
     display: flex;
@@ -49,7 +50,8 @@
 }
 
 #supplierInterest {
-    height: 100vh;
+    height: 100%;
+    min-height: 100vh;
     background: white;
     padding: 0px 10%;
     border-top: 1px solid #ccc;
@@ -88,19 +90,23 @@
 
 .buyer-area, .supplier-area{
     text-align: center;
-    margin: 0px 150px 50px 150px;
+    margin: 50px 150px 50px 150px;
 }
 
 #buyerUl, #supplierUl{
-    visibility: hidden;
+    display:none;
     
 }
 
+
+
 #buyersCats, #suppliersCats{
-    visibility: hidden;
+    display:none;
 }
 
-
+.showContent {
+    display:block !important;
+}
 
 .supplier-area .info-text {
     margin-bottom: 10px;

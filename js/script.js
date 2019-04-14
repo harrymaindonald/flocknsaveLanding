@@ -1379,7 +1379,7 @@ moveDownSupplier.addEventListener('click', function(){
     scrollDown('#supplierInterest', 1000);
 });
 
-var revealBuyerInfo = document.getElementById('landingBuyerReveal');
+/* var revealBuyerInfo = document.getElementById('landingBuyerReveal');
 var revealSupplierInfo = document.getElementById('landingSupplierReveal');
 var buyerInfo1 = document.getElementById('buyerUl'); 
 var buyerInfo2 = document.getElementById('buyersCats');
@@ -1388,8 +1388,8 @@ var supplierInfo2 = document.getElementById('suppliersCats');
 
 
 revealBuyerInfo.addEventListener('click', function(){
-    if(buyerInfo1.style.visibility === "hidden"){
-        buyerInfo1.style.visibility = "visible";
+    if(buyerInfo2.style.visibility === "hidden"){
+       buyerInfo1.style.visibility = "visible";
         buyerInfo2.style.visibility = "visible";
         
     } else {
@@ -1400,11 +1400,22 @@ revealBuyerInfo.addEventListener('click', function(){
 
 
 revealSupplierInfo.addEventListener('click', function(){
-    if(supplierInfo1.style.visibility === "hidden"){
+    if(supplierInfo2.style.visibility === "hidden"){
         supplierInfo1.style.visibility = "visible";
         supplierInfo2.style.visibility = "visible";
     } else {
         supplierInfo1.style.visibility = "hidden";
         supplierInfo2.style.visibility = "hidden";
     }
+}); */
+
+
+$("#landingBuyerReveal").click(function(){
+    $("#buyerUl").toggleClass('showContent');
+    $("#buyersCats").toggleClass('showContent');
+});
+
+$("#landingSupplierReveal").click(function(){
+    $("#supplierUl").toggleClass('showContent');
+    $("#suppliersCats").toggleClass('showContent');
 });
