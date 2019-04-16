@@ -2840,10 +2840,7 @@ input.bad_bid{
 
 
     @media only screen and (min-width: 1285px) and (max-height: 780px) {
-        .buyer-area, .supplier-area{
-            height: 45vh;
-            margin-bottom: 0;
-        }
+     
         .category-container{
             height:40vh;
         }
@@ -3105,7 +3102,7 @@ input.bad_bid{
      #landing1 #leftContent h1 {
          font-size: 3em;
          margin-bottom: 15px;
-         margin-top: 100px;
+         margin-top: 30px;
      }
 
      #landing1 #leftContent h2 {
@@ -3114,12 +3111,13 @@ input.bad_bid{
      }
 
      .interest-buttons{
-         margin: 75px 0px 100px 0px;
+         margin: 16px 0px 0px 0px;
      }
 
-     .move-down-btn{
-         margin-top: 25px;
-         margin-bottom: 10px;
+     .statement-text{
+        font-size: 10px;
+        margin: 16px 8px 0px 8px;
+        text-align: justify;
      }
 
      .landing-logo{
