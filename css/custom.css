@@ -208,6 +208,8 @@
     color: #fff !important;
     background: #33687A !important;
     margin: 0 25px;
+    width: 30%;
+    max-width: 250px;
 }
 
 .move-down-btn:hover{
