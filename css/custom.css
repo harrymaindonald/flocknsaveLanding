@@ -27,7 +27,7 @@
 }
 
 .interest-buttons{
-    margin: 100px 0px 100px 0px;    
+    margin: 75px 0px 75px 0px;    
 }
 
 .landing-logo{
@@ -207,7 +207,6 @@
     border: 4px solid #33687A !important;
     color: #fff !important;
     background: #33687A !important;
-    width: 220px;
     margin: 0 25px;
 }
 
@@ -812,9 +811,6 @@ main #search #seachResults ul li .template-withtabs-content-flexitem3 table a{
 
 }
 
-.category img {
-   height: 128px;
-}
 .category p {
     color: #003b4e;
     text-align: center;
@@ -2936,6 +2932,7 @@ input.bad_bid{
 
      .move-down-btn {
          margin-bottom: 10px;
+         width: 220px;
      }
 
      .register-content{
@@ -2956,6 +2953,10 @@ input.bad_bid{
     #landing1 #leftContent h2 {
         font-size: 1.4rem;
         margin: 0px;
+    }
+
+    .interest-buttons{
+        margin: 50px 0px 50px 0px;    
     }
   
  }
@@ -3098,11 +3099,16 @@ input.bad_bid{
          font-size: 12px !important;
      }
 
+     #landing1{
+         height: auto;
+         min-height:100vh;
+     }
+
 
      #landing1 #leftContent h1 {
          font-size: 3em;
          margin-bottom: 15px;
-         margin-top: 30px;
+         margin-top: 75px;
      }
 
      #landing1 #leftContent h2 {
@@ -3170,6 +3176,10 @@ input.bad_bid{
      .categories .category {
          width: 25%;
      }
+
+     .category-container .categories .category {
+        width: auto;
+    }
     
     
     .category p{
@@ -3247,11 +3257,15 @@ input.bad_bid{
         text-align: center !important;
         margin-bottom: 10px;
     }
-    .category img {
+    category img {
         max-height: 128px;
         height: auto;
      }
 
+    #landing1 {
+        height: auto;
+        min-height:100vh;
+    } 
 
 
     #landing1 #leftContent h1 {
@@ -3263,11 +3277,6 @@ input.bad_bid{
     #landing1 #leftContent h2 {
         font-size: 1.4rem;
         margin: 0px;
-    }
-
-    .move-down-btn{
-        margin-top: 25px;
-        margin-bottom: 10px;
     }
 
     .landing-logo{
@@ -3304,12 +3313,13 @@ input.bad_bid{
     }
 
     .interest-buttons{
-        margin: 30px 0px 30px 0px;
+        margin: 20px 0px 20px 0px;
     }
 
     .move-down-btn{
         width: 205px;
         font-size: 13px !important;
+        margin-bottom: 10px;
     }
 
     .buyer-area, .supplier-area{
@@ -3339,4 +3349,10 @@ input.bad_bid{
         margin-bottom:20px;
     }
 
+
+    .statement-text{
+        font-size: 10px;
+        margin: 16px 8px 0px 8px;
+        text-align: center;
+    }
  }
