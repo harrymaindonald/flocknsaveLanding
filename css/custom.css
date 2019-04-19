@@ -200,7 +200,14 @@
 	top: 2px;
 }
 
-
+#comingSoonMsg{
+    background: white;
+    margin: 0;
+    text-align: center;
+    font-size: 2.5em;
+    color: rgba(45, 44, 45, 0.8);
+    font-style: italic;
+}
 
 
 .move-down-btn{
@@ -3167,6 +3174,10 @@ input.bad_bid{
         margin-bottom:20px;
     }
 
+    #comingSoonMsg{
+        font-size: 1.5em;
+        margin-top: 50px;
+    }
 
  }
 
@@ -3356,5 +3367,11 @@ input.bad_bid{
         font-size: 10px;
         margin: 16px 8px 0px 8px;
         text-align: center;
+    }
+
+    
+    #comingSoonMsg{
+        font-size: 1.5em;
+        margin-top: 50px;
     }
  }
